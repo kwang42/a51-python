@@ -72,7 +72,7 @@ def clock_a5(clocking):
             reg_2 = temp_arr2
 
         if reg_3[10] == majority:
-            first_bit = int(reg_3[20]) ^ int(reg_3[21]) ^ int(reg_3[22])
+            first_bit = int(reg_3[7]) ^ int(reg_3[20]) ^ int(reg_3[21]) ^ int(reg_3[22])
             temp_arr3 = np.empty_like(reg_3)
             temp_arr3[0] = first_bit
             #copying all except last bit
